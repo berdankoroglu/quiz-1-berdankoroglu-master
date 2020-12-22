@@ -48,6 +48,25 @@ int PLANE::Getid()
 }
 };
 
+class BOEING: public PLANE
+{
+public:
+	BOEING(int idIn);
+	void PrintPLANE(); 
+	BOEING::BOEING(int idIn): PLANE(idIn)
+{
+}
+
+void BOEING::PrintPLANE)
+{
+	cout << "BOEING ";
+	PLANE::PrintPLANE();
+}
+
+};
+
+
+
 
 
 
