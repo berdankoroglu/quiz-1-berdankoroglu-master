@@ -56,7 +56,7 @@ public:
 
 void PLANE::PrintPLANE()
 {
-	cout << id << "IDs of ate aircrafts are ";
+	cout << "THY has"<< numBOEING <<"BOEING and " <<numAIRBUS<< " AIRBUS aircrafts.";
 }
 
 int PLANE::Getid()  
