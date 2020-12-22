@@ -17,8 +17,18 @@ class AIRLINE
 	vector<PLANE*> Planes;
 
 public:
-	void AddAircraft(PLANE* pAL);
-	void PrintAIRLINE();
+	
+void AIRLINE::AddAircraft(PLANE* pAL)
+{
+	Planes.push_back(pAL);
+}
+
+void AIRLINE::PrintAIRLINE()
+{
+	int Total = 0;
+	for (auto pAL : Planes)
+	{
+	
 };
 
 
@@ -72,6 +82,9 @@ public:
 }
 
 };
+
+
+
 
 
 
