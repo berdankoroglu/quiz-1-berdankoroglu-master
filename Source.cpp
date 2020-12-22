@@ -25,9 +25,16 @@ void AIRLINE::AddAircraft(PLANE* pAL)
 
 void AIRLINE::PrintAIRLINE()
 {
-	int Total = 0;
+	int Temp = 0;
 	for (auto pAL : Planes)
-	{
+	{	if (Temp > 0)
+			cout << " ";
+
+		pAL->PrintPLANE(); 
+		Temp = pAL->Getid();
+	}
+	cout << "IDs of the aircraft are: = " << Temp<< endl;
+}
 	
 };
 
