@@ -52,18 +52,27 @@ class BOEING: public PLANE
 {
 public:
 	BOEING(int idIn);
-	void PrintPLANE(); 
-	BOEING::BOEING(int idIn): PLANE(idIn)
+	void BOEING::PrintPLANE()
 {
-}
-
-void BOEING::PrintPLANE)
-{
-	cout << "BOEING ";
+	cout << "BOEING";
 	PLANE::PrintPLANE();
 }
 
 };
+
+
+class AIRBUS: public PLANE
+{
+public:
+	AIRBUS(int idIn);
+	void AIRBUS::PrintPLANE()
+{
+	cout << "AIRBUS";
+	PLANE::PrintPLANE();
+}
+
+};
+
 
 
 
