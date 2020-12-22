@@ -17,10 +17,24 @@ BOEING::BOEING(int CostIn): PLANE(CostIn)
 class PLANE
 {
 	int id;
+	
 
 public:
 	PLANE(int idIn);
 
 	virtual void PrintPLANE();
 	int Getid();
+	PLANE::PLANE(int idIn) : id(idIn)
+{
+}
+
+void PLANE::PrintPLANE()
+{
+	cout << id << "IDs of ate aircrafts are ";
+}
+
+int PLANE::Getid()  
+{ 
+	return id; 
+}
 };
